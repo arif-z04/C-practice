@@ -15,13 +15,19 @@ int main()
     for(int i = 0; i < 21; i++){
         printf("a[%d] = %d\n", i, a1[i]);
     }
+    
     printf("a1: %p\n", a1);
+    
+    int *save = a1;
+
     a1 = realloc(a1, sizeof(int) * 20);
+    
     printf("a1: %p\n", a1);
 
-    for(int i = 0; i < 40; i++){
+    for(int i = 0; i < 25; i++){
         printf("a[%d] = %d\n", i, a1[i]);
     }
+    
     free(a1);
     free(a2);  
     return 0;
