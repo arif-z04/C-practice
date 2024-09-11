@@ -18,10 +18,16 @@ int main(){
         return 1;
     }
 
-    srand(time(0));
-    for(int i = 0; i < size; i++){
-        int random_number = (rand()%(100-70+ 1))+70;
-        arr[i] = random_number;    
+    //Generating random numbers;
+    // srand(time(0));
+    // for(int i = 0; i < size; i++){
+    //     int random_number = (rand()%(100-70+ 1))+70;
+    //     arr[i] = random_number;    
+    // }
+    
+    for (int i = 0; i < size; i++) {
+        printf("Enter %d'th place data: ",i);
+        scanf("%d", &arr[i]);
     }
 
     int freq[100][2] = {0};
@@ -47,7 +53,7 @@ int main(){
     for (int i = 0; i < unique_count; i++) {
         printf("%d occurs %d time(s)\n", freq[i][0], freq[i][1]);
     }
-    
+
     free(arr);
     return 0;
 }
