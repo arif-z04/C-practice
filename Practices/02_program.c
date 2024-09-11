@@ -37,9 +37,9 @@ int main(){
 
     for(int i = 0; i <= max; i++){
         if(freq[i] > 0){
-            // printf("%d occurs %d time(s)\n", i, freq[i]);
+            printf("%d occurs %d time(s)\n", i, freq[i]);
         }
-        printf("freq[%d] = %d\n", i, freq[i]);
+       // printf("freq[%d] = %d\n", i, freq[i]);
     }
 
     free(arr);

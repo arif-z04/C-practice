@@ -33,6 +33,7 @@ int main(){
     int freq[100][2] = {0};
     int unique_count = 0;
 
+    //need to study this part!
     for(int i = 0; i < size; i++){
         int found = 0;
 
