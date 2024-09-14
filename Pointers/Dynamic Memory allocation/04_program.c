@@ -8,10 +8,10 @@ int main(){
     char *password1;
     char *password2;
 
-    password1 = (char*)malloc(8*sizeof(char));
-    password2 = (char*)malloc(8*sizeof(char));
+    password1 = malloc( 8 * sizeof(char));
+    password2 = malloc( 8 * sizeof(char));
 
-    strcpy(password1, "my123ou");
+    strcpy(password1, "my12345");
     strcpy(password2, "koma123");
 
     printf("p1 addr: %p\np2 addr: %p\n",
@@ -33,6 +33,7 @@ int main(){
     for(int i = 0; i < 100; i++){
         printf("%c", password1[i]);
     }
-    
+    free(password1);
+    free(password2);
     return 0;
 }   
