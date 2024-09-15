@@ -7,6 +7,7 @@
 int main(){
     char *password1;
     char *password2;
+    char *other_ptr;
 
     password1 = malloc( 8 * sizeof(char));
     password2 = malloc( 8 * sizeof(char));
@@ -25,6 +26,7 @@ int main(){
     }
     printf("\n");
 
+    other_ptr = password1; 
     password1 = realloc(password1, 20 * sizeof(char));
     printf("password1: %s\n\n", password1);
     printf("p1 addr: %p\np2 addr: %p\n",
@@ -33,6 +35,8 @@ int main(){
     for(int i = 0; i < 100; i++){
         printf("%c", password1[i]);
     }
+
+
     free(password1);
     free(password2);
     return 0;
