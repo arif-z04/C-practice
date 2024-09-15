@@ -5,7 +5,9 @@
 
 int main()
 {
-    char* password;
+    char *password;
+    char *other_ptr; 
+
     password = (char*)malloc(10 * sizeof(char));
 
     printf("\nTrustworthy Program\n\n");
@@ -13,5 +15,11 @@ int main()
     scanf("%s", password);
 
     free(password);
+    other_ptr = password;
+
+    for(int i = 0; i < 10; i++){
+        printf("%c", other_ptr[i]);
+    }
+
     return 0;
 }
