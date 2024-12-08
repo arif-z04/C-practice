@@ -10,10 +10,13 @@ for filename in os.listdir(current_directory):
         # Construct full file path
         file_path = os.path.join(current_directory, filename)
         try:
-            # Remove the file
             os.remove(file_path)
             print(f"Deleted: {file_path}")
         except Exception as e:
             print(f"Error deleting {file_path}: {e}")
 
 print("Finished deleting .exe files.")
+
+
+# char id[10] = "1234567890"
+# char letter = 's'

@@ -3,7 +3,7 @@
 int main(){
     float sum = 0;
     
-    for(int i = 1; i <= 50; i++){   
+    for(int i = 1; i<=50; i++){
         sum += (float)1/i;
     }
     
