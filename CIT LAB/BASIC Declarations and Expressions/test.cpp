@@ -4,9 +4,13 @@ using namespace std;
 
 int main()
 {
-    double x1, y1, x2, y2;
-    cin >> x1 >> y1;
-    cin >> x2 >> y2;
-
+    int n;
+    int flag = 1;
+    while(flag){
+        cin >> n;
+        if(n == 0) flag = 0; 
+        int term = (n * (n - 1)) / 2 + 1;
+        cout << term << endl;
+    }
     return 0;
 }

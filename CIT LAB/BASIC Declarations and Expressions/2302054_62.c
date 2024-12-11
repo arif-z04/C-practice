@@ -19,3 +19,4 @@ int main(){
     printf("Sum of the digits of %d is %d\n", org, sum_of_digit);
 
 }
+
