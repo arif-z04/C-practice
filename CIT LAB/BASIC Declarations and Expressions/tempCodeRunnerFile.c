@@ -1,23 +1,19 @@
 #include <stdio.h>
 
 int main(){
+    int n; 
+    printf("Input the size of the square: ");
+    scanf("%d", &n);
 
-    int count, n;
-
-    float x, y;
-
-    printf("Input the values of x and n: \n");
-    printf("X = "); scanf("%d", &X);
-    printf("n = "); scanf("%d", &n);
-
-    y = 1.0;
-    count = 1;
-
-    while(count <= n){
-        y = y * x;
-        count++;
+    for(int i = 1; i<=n; i++){
+        for(int j = 1; j<=n; j++){
+            if(i == 0 || i == n - 1 || j == 0 || j == n - 1){
+                printf("#");
+            } else {
+                printf(" ");
+            }
+        }
+        printf("\n");
     }
 
-    printf("x = %f; n=%d; \nx nto to power n = %f\n", x, n, count);
-    
 }
