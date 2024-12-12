@@ -7,7 +7,7 @@ int main(){
     float x, y;
 
     printf("Input the values of x and n: \n");
-    printf("X = "); scanf("%d", &X);
+    printf("X = "); scanf("%f", &x);
     printf("n = "); scanf("%d", &n);
 
     y = 1.0;
@@ -18,6 +18,6 @@ int main(){
         count++;
     }
 
-    printf("x = %f; n=%d; \nx nto to power n = %f\n", x, n, count);
-    
+    printf("x = %f; n = %d; \nx to power n = %d\n", x, n, count);
+    printf("y = %f", y);
 }
