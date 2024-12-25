@@ -8,4 +8,6 @@ int main(){
 
     if(b % a == 0) printf("Multiplies.");
     else printf("Not multiple.");
+
+    return 0;
 }
