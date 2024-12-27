@@ -2,5 +2,6 @@
     "files.associations": {
         "stdio.h": "c",
         "iostream": "cpp"
-    }
+    },
+    "github.copilot.editor.enableAutoCompletions": true
 }
