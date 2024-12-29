@@ -2,19 +2,22 @@
 #include <stdio.h>
 
 int main(){
-    int n;
-    printf("Input an integer:\n");
-    scanf("%d", &n);
+    double n;
+    double arr[10];
 
-    int arr[10];
+    printf("Input an integer(2-10):\n");
+    scanf("%lf", &n);
+
     arr[0] = n;
-    for (int i = 1; i < 10; i++){
-        arr[i] = arr[i-1] / 3;
+
+    for(int i = 1; i < 10; i++){
+        n = n/3;
+        arr[i] = n;
     }
 
-    for (int i = 0; i < 10; i++){
-        printf("array_nums[%d] = %d\n", i, arr[i]);
+    printf("Array elements:\n");
+    for(int i = 0; i < 10; i++){
+        printf("array_nums[%d] = %.4lf\n", i, arr[i]);
     }
-
     return 0;
 }
